@@ -67,7 +67,7 @@
     "minimum": { "value": 5.757, "varType": "double" },
     "niceName": { "value": "Oscillator [Basic Line]", "varType": "string" },
     "offset": { "value": -10.0, "varType": "double" },
-    "time": { "value": 220.0, "varType": "double" },
+    "time": { "value": 21.0, "varType": "double" },
     "useNormals": { "value": true, "varType": "bool" },
     "uuid": { "value": "451b50b4-3ac8-4a41-9558-8d4a5895c3f7", "varType": "string" }
    },
@@ -331,7 +331,7 @@
      "varType": "color"
     },
     "fps": { "value": 60.0, "varType": "double" },
-    "inTime": { "value": 220.0, "varType": "double" },
+    "inTime": { "value": 21.0, "varType": "double" },
     "niceName": { "value": "Composition 1", "varType": "string" },
     "resolution": {
      "value": { "x": 1080, "y": 1080 },
@@ -344,14 +344,14 @@
   },
   {
    "attributes": {
-    "time": { "value": 220.0, "varType": "double" }
+    "time": { "value": 21.0, "varType": "double" }
    },
    "nodeId": "visibilityCurve#5",
    "nodeType": "visibilityCurve"
   },
   {
    "attributes": {
-    "time": { "value": 220.0, "varType": "double" }
+    "time": { "value": 21.0, "varType": "double" }
    },
    "nodeId": "visibilityCurve#1",
    "nodeType": "visibilityCurve"
