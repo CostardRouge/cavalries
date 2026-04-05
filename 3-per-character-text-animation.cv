@@ -1,0 +1,332 @@
+{
+ "activeComp": "compNode#1",
+ "connections": [
+  { "from": "compNode#1.outActiveAnimationLayer", "to": "visibilityCurve#1.activeAnimationLayer" },
+  { "from": "keyframe#2.id", "to": "visibilityCurve#1.keyframes.1" },
+  { "from": "keyframe#1.id", "to": "visibilityCurve#1.keyframes.0" },
+  { "from": "compNode#1.time", "to": "visibilityCurve#1.time" },
+  { "from": "keyframe#12.id", "to": "animationCurve#4.keyframes.2" },
+  { "from": "keyframe#11.id", "to": "animationCurve#4.keyframes.1" },
+  { "from": "keyframe#10.id", "to": "animationCurve#4.keyframes.0" },
+  { "from": "compNode#1.outActiveAnimationLayer", "to": "animationCurve#4.activeAnimationLayer" },
+  { "from": "compNode#1.time", "to": "animationCurve#4.time" },
+  { "from": "stagger#3.id", "to": "subMesh#1.shapeTimeOffset" },
+  { "from": "animationCurve#4.out", "to": "subMesh#1.shapePosition.y" },
+  { "from": "subMesh#1.id", "to": "textShape#1.deformers.0" },
+  { "from": "colorMaterial#1.id", "to": "textShape#1.material" },
+  { "from": "visibilityCurve#1.out", "to": "textShape#1.on" }
+ ],
+ "labelColors": "Pastel",
+ "nodeMeta": [
+  {
+   "children": [ "keyframe#2", "keyframe#1" ],
+   "nodeId": "visibilityCurve#1"
+  },
+  {
+   "children": [ "stagger#3", "textShape#1", "subMesh#1" ],
+   "nodeId": "compNode#1"
+  },
+  {
+   "children": [ "keyframe#12", "keyframe#11", "keyframe#10" ],
+   "nodeId": "animationCurve#4"
+  },
+  {
+   "children": [ "animationCurve#4", "hiddenFolder#2" ],
+   "nodeId": "subMesh#1"
+  },
+  {
+   "children": [ "compNode#1" ],
+   "nodeId": "asset#1"
+  },
+  {
+   "children": [ "strokeMaterial#2", "colorMaterial#2" ],
+   "nodeId": "hiddenFolder#2"
+  },
+  {
+   "children": [ "colorArray#1" ],
+   "nodeId": "paletteContainer#1"
+  },
+  {
+   "children": [ "motionBlurFilter#1", "strokeMaterial#1", "colorMaterial#1", "visibilityCurve#1" ],
+   "nodeId": "hiddenFolder#1"
+  },
+  {
+   "children": [ "hiddenFolder#1" ],
+   "nodeId": "textShape#1"
+  }
+ ],
+ "nodes": [
+  {
+   "attributes": {
+    "time": { "value": 9.0, "varType": "double" }
+   },
+   "nodeId": "visibilityCurve#1",
+   "nodeType": "visibilityCurve"
+  },
+  {
+   "attributes": {
+    "backgroundColor": {
+     "value": { "a": 255, "b": 198, "g": 213, "r": 45 },
+     "varType": "color"
+    },
+    "fps": { "value": 60.0, "varType": "double" },
+    "inTime": { "value": 9.0, "varType": "double" },
+    "niceName": { "value": "Composition 1", "varType": "string" },
+    "resolution": {
+     "value": { "x": 1080, "y": 1080 },
+     "varType": "int2"
+    },
+    "uuid": { "value": "d99ab40d-3c18-4b7d-8930-392d8234bb16", "varType": "string" }
+   },
+   "nodeId": "compNode#1",
+   "nodeType": "compNode"
+  },
+  {
+   "attributes": {
+    "postInfinity": { "value": 1, "varType": "enum" },
+    "time": { "value": 9.0, "varType": "double" }
+   },
+   "nodeId": "animationCurve#4",
+   "nodeType": "animationCurve"
+  },
+  {
+   "attributes": {
+    "colorId": { "value": 4, "varType": "int" },
+    "levelMode": { "value": 3, "varType": "enum" },
+    "niceName": { "value": "Sub-Mesh [Sucre d'amour]", "varType": "string" },
+    "shapePosition": {
+     "value": { "x": 0.0, "y": 58.45516473572401 },
+     "varType": "double2"
+    },
+    "shapeTimeOffset": { "value": 145.0, "varType": "double" },
+    "uuid": { "value": "51cf296d-5ae8-4030-895a-7a8240273632", "varType": "string" }
+   },
+   "nodeId": "subMesh#1",
+   "nodeType": "subMesh"
+  },
+  {
+   "attributes": {
+    "uuid": { "value": "55a1ae3d-423e-4cf5-a894-1c9c29f578b3", "varType": "string" }
+   },
+   "nodeId": "asset#1",
+   "nodeType": "asset"
+  },
+  {
+   "attributes": {
+    "niceName": { "value": "subUINodes", "varType": "string" },
+    "uuid": { "value": "00c99e2e-b538-4a5c-ac64-ed2200bf2ff6", "varType": "string" }
+   },
+   "nodeId": "hiddenFolder#2",
+   "nodeType": "hiddenFolder"
+  },
+  {
+   "attributes": {
+    "colorId": { "value": 6, "varType": "int" },
+    "niceName": { "value": "Fill 2", "varType": "string" },
+    "showInProjectWindow": { "value": false, "varType": "bool" },
+    "uuid": { "value": "4d26ae38-c9b4-4170-8a5b-b31f00fbc4de", "varType": "string" }
+   },
+   "nodeId": "colorMaterial#2",
+   "nodeType": "colorMaterial"
+  },
+  {
+   "attributes": {
+    "colorId": { "value": 6, "varType": "int" },
+    "niceName": { "value": "Stroke 2", "varType": "string" },
+    "showInProjectWindow": { "value": false, "varType": "bool" },
+    "uuid": { "value": "319f458a-dff8-4f87-a8b3-327eb6eca9cd", "varType": "string" }
+   },
+   "nodeId": "strokeMaterial#2",
+   "nodeType": "strokeMaterial"
+  },
+  {
+   "attributes": {
+    "niceName": { "value": "Default Scene Palette", "varType": "string" },
+    "uuid": { "value": "4c69f027-ef4c-4c5b-a434-5b252070ecff", "varType": "string" }
+   },
+   "nodeId": "colorArray#1",
+   "nodeType": "colorArray"
+  },
+  {
+   "attributes": {
+    "niceName": { "value": "Render Manager", "varType": "string" },
+    "uuid": { "value": "e6433579-469d-4b64-aebe-5d2a9c8232dc", "varType": "string" }
+   },
+   "nodeId": "dynamicIndexManager#1",
+   "nodeType": "dynamicIndexManager"
+  },
+  { "nodeId": "paletteContainer#1", "nodeType": "paletteContainer" },
+  { "nodeId": "renderQueue#1", "nodeType": "renderQueue" },
+  {
+   "attributes": {
+    "colorId": { "value": 6, "varType": "int" },
+    "niceName": { "value": "Stroke", "varType": "string" },
+    "showInProjectWindow": { "value": false, "varType": "bool" },
+    "uuid": { "value": "cce88033-c416-4104-bb01-6dda3bcc38ec", "varType": "string" }
+   },
+   "nodeId": "strokeMaterial#1",
+   "nodeType": "strokeMaterial"
+  },
+  {
+   "attributes": {
+    "colorId": { "value": 14, "varType": "int" },
+    "niceName": { "value": "Motion Blur", "varType": "string" },
+    "showInProjectWindow": { "value": false, "varType": "bool" },
+    "uuid": { "value": "b6e95dd4-830a-46bf-aa70-a524bdef9277", "varType": "string" }
+   },
+   "nodeId": "motionBlurFilter#1",
+   "nodeType": "motionBlurFilter"
+  },
+  {
+   "attributes": {
+    "colorId": { "value": 6, "varType": "int" },
+    "niceName": { "value": "Fill", "varType": "string" },
+    "showInProjectWindow": { "value": false, "varType": "bool" },
+    "uuid": { "value": "0aa73a06-db79-4baf-8193-1f8616de1bd4", "varType": "string" }
+   },
+   "nodeId": "colorMaterial#1",
+   "nodeType": "colorMaterial"
+  },
+  {
+   "attributes": {
+    "data": {
+     "value": { "numValue": 1.0 },
+     "varType": "keyData"
+    },
+    "uuid": { "value": "7224161e-0f1a-459b-ab37-eb96f3103b3d", "varType": "string" }
+   },
+   "nodeId": "keyframe#1",
+   "nodeType": "keyframe"
+  },
+  {
+   "attributes": {
+    "niceName": { "value": "subUINodes", "varType": "string" },
+    "uuid": { "value": "a9b0a2c8-a91e-47b8-9f7b-218d36f9af79", "varType": "string" }
+   },
+   "nodeId": "hiddenFolder#1",
+   "nodeType": "hiddenFolder"
+  },
+  {
+   "attributes": {
+    "data": {
+     "value": { "numValue": -1.0 },
+     "varType": "keyData"
+    },
+    "timeOffset": { "value": 250.0, "varType": "double" },
+    "uuid": { "value": "11c324ce-ad2f-4210-a4a8-f62838b71538", "varType": "string" }
+   },
+   "nodeId": "keyframe#2",
+   "nodeType": "keyframe"
+  },
+  {
+   "attributes": {
+    "data": {
+     "value": {
+      "interpolation": 0,
+      "leftBez": { "x": -7.83087158203125, "y": -139.47898864746094 },
+      "locked": true,
+      "numValue": 228.61294555664063,
+      "rightBez": { "x": 7.83087158203125, "y": 139.47898864746094 }
+     },
+     "varType": "keyData"
+    },
+    "timeOffset": { "value": 34.0, "varType": "double" },
+    "uuid": { "value": "2f19174f-3f42-4175-b621-682940f41b56", "varType": "string" }
+   },
+   "nodeId": "keyframe#11",
+   "nodeType": "keyframe"
+  },
+  {
+   "attributes": {
+    "data": {
+     "value": { "numValue": 31.92711846288507 },
+     "varType": "keyData"
+    },
+    "uuid": { "value": "2892a94e-376f-48ed-8d9b-1f627a9d5ad4", "varType": "string" }
+   },
+   "nodeId": "keyframe#10",
+   "nodeType": "keyframe"
+  },
+  {
+   "attributes": {
+    "data": {
+     "value": { "numValue": 35.26082229614258 },
+     "varType": "keyData"
+    },
+    "timeOffset": { "value": 69.0, "varType": "double" },
+    "uuid": { "value": "a2dc6cd7-4f67-4be7-835b-b6136885af58", "varType": "string" }
+   },
+   "nodeId": "keyframe#12",
+   "nodeType": "keyframe"
+  },
+  {
+   "attributes": {
+    "colorId": { "value": 4, "varType": "int" },
+    "graph": {
+     "list": [
+      {
+       "compound": {
+        "left": {
+         "value": { "x": -0.5, "y": -0.5 },
+         "varType": "double2"
+        },
+        "right": {
+         "value": { "x": 0.5, "y": 0.5 },
+         "varType": "double2"
+        }
+       }
+      },
+      {
+       "compound": {
+        "left": {
+         "value": { "x": -0.5, "y": -0.5 },
+         "varType": "double2"
+        },
+        "position": {
+         "value": { "x": 1.0, "y": 1.0 },
+         "varType": "double2"
+        },
+        "right": {
+         "value": { "x": 0.5, "y": 0.5 },
+         "varType": "double2"
+        }
+       }
+      }
+     ]
+    },
+    "maximum": { "value": 145.0, "varType": "double" },
+    "minimum": { "value": 88.0, "varType": "double" },
+    "niceName": { "value": "Stagger [Time Offset]", "varType": "string" },
+    "uuid": { "value": "a8d085d1-8931-45a7-9fdc-0bbb3ca2f93b", "varType": "string" }
+   },
+   "nodeId": "stagger#3",
+   "nodeType": "stagger"
+  },
+  {
+   "attributes": {
+    "colorId": { "value": 11, "varType": "int" },
+    "font": {
+     "value": { "font": "Copperplate", "style": "Regular" },
+     "varType": "font"
+    },
+    "fontSize": { "value": 138.0, "varType": "double" },
+    "horizontalAlignment": { "value": 1, "varType": "enum" },
+    "niceName": { "value": "Sucre d'amour", "varType": "string" },
+    "position": {
+     "value": { "x": -296.99993896484375, "y": 77.42125497820487, "z": 0.0 },
+     "varType": "double3"
+    },
+    "text": { "value": "Sucre d'amour", "varType": "richText" },
+    "uuid": { "value": "64e49c7f-8bf8-47f5-a50c-11fd5d7984c4", "varType": "string" },
+    "verticalAlignment": { "value": 1, "varType": "enum" }
+   },
+   "nodeId": "textShape#1",
+   "nodeType": "textShape"
+  }
+ ],
+ "other": {
+  "viewport": { "backgroundMode": 0, "rulers": {} }
+ },
+ "resourceType": "cavalry.scenefile",
+ "version": "1.0.44"
+}
